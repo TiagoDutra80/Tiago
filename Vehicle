@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author sala303b
+ */
+public class Motorcycle  extends Vehicle{
+    
+    public static void main(String[] args) {
+        
+        Vehicle veloci = new Vehicle();
+        veloci.go();
+        //VEICULO
+        System.out.println("Wheels of Vehicle: " + veloci.wheels());
+        
+        
+        //MOTOCICLETA
+        Motorcycle mot = new Motorcycle();
+        System.out.println("Wheels of Motorcycle: " + mot.wheels());
+        
+        
+    }
+       
+    @Override
+        public int wheels(){
+        return 2;
+    }
+    
+}
